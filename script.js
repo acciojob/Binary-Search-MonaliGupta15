@@ -11,9 +11,7 @@ function binarySearch(nums, target) {
 
 			if(nums[mid] == target)
 			{
-				ispresent = true
-				console.log(mid)
-				break
+				return mid;
 			}
 			else if(target > nums[mid])
 			{
@@ -21,7 +19,7 @@ function binarySearch(nums, target) {
 			}
 			else
 			{
-				end = mid -1
+				e = mid -1
 			}
 		}
 }
