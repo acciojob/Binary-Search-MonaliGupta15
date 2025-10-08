@@ -9,13 +9,13 @@ function binarySearch(nums, target) {
 		{
 			let mid = Math.floor((s+e)/2)
 
-			if(arr[mid] == target)
+			if(nums[mid] == target)
 			{
 				ispresent = true
 				console.log(mid)
 				break
 			}
-			else if(target > arr[mid])
+			else if(target > nums[mid])
 			{
 				s = mid + 1
 			}
